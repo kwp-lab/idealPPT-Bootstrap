@@ -1,0 +1,39 @@
+{
+  "name": "idealppt-bootstrap",
+  "version": "0.1.0",
+  "description": "create beautiful presentation slides faster with vikadata and reveal.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon dev.js",
+    "deploy": "cd .. && npx sls deploy",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "PPT",
+    "Presentation",
+    "vikadata",
+    "vika",
+    "reveal.js",
+    "reveal"
+  ],
+  "author": "Kelvin Poon",
+  "license": "MIT",
+  "dependencies": {
+    "@vikadata/vika": "^1.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "./index.js",
+      "./dev.js"
+    ],
+    "ext": "js,json"
+  }
+}
